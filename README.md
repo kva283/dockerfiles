@@ -1,2 +1,1 @@
-Fichiers Dockerfile par projet.
-Les images Docker relatives sont publiées sur Docker Hub.
+Images Docker pour l'utilisation d'Ansible en mode `core` ou `full`.
