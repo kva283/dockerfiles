@@ -1,14 +1,13 @@
-# Image : ansible-full
+# Image : ansible-core
 
 ## Détail de l'image
+- Contenu de l'image :
+  - OS : Debian 13 (Trixie)
+  - Python : 3.13.6
+  - Ansible : 11.9.0
 
-OS : Debian 12 (Bookworm)
-Python : 3.12
-Ansible : 2.17
+- L'image offre une version d'Ansible complète installée via pip. Cette version contient tous les modules de base d'Ansible.
+- Dockerfile validé via `HadoLint`.
 
-L'image offre une version d'`ansible` complète installée via pip.
-Cette version contient tous les modules de base d'Ansible.
-
-## Récupération de l'image
-
-docker pull karlito283/ansible-full
+## Build de l'image
+docker build . -t ansible-full:11.9.0
