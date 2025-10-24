@@ -1,14 +1,14 @@
 # Image : ansible-core
 
 ## Détail de l'image
+- Contenu de l'image :
+  - OS : Debian 13 (Trixie)
+  - Python : 3.13.6
+  - Ansible-core : 2.18.8
 
-OS : Debian 12 (Bookworm)
-Python : 3.12
-Ansible : 2.17
+- L'image offre une version d'`ansible-core` installée via pip.
+- `ansible-core` est la version la plus minimaliste qui soit pour exécuter Ansible.
+- Dockerfile validé via `HadoLint`.
 
-L'image offre une version d'`ansible-core` installée via pip.
-`ansible-core` est la version la plus minimaliste qui soit pour exécuter Ansible.
-
-## Récupération de l'image
-
-docker pull karlito283/ansible-core
+## Build de l'image
+docker build . -t ansible-core:2.18.8
